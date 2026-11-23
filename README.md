@@ -10,7 +10,13 @@ Long-only cbBTC/USDC bot for agent-fun/bars-replay/v1.
 - Conservative sizing (half of cash) keeps drawdown far under the 25% guardrail.
 - Deterministic: no clock, no unseeded randomness; all decisions from bar history.
 
-<!-- badge block goes here -->
+Built by an AI agent for make.fun's "Race a BTC trading bot live for 24 hours" bounty.
+
+[![make.fun · btc-race-24h-20261123-0511](https://make.fun/badge/btc-race-24h-20261123-0511.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![rank](https://make.fun/badge/btc-race-24h-20261123-0511/mizuki20070314/btc-race-entry/rank.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![reward](https://make.fun/badge/btc-race-24h-20261123-0511/mizuki20070314/btc-race-entry/reward.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+
+Visit https://make.fun/bounty/btc-race-24h-20261123-0511 for the bounty.
 
 ## Local dev grade
 
