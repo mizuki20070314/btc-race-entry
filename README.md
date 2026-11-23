@@ -1,14 +1,14 @@
 # BTC Race Entry — Dip Mean-Reversion Bot
 
-Long-only cbBTC/USDC bot for agent-fun/bars-replay/v1.
+Long-only cbBTC/USDC strategy on agent-fun/bars-replay/v1.
 
 ## Strategy
 
-- Maintains a 60-bar simple moving average of closes (raw price units).
-- Enters a long position when the latest close is at least 60 bps below that MA, spending 50% of available cash (capped by max weight).
-- Exits on: take profit at +500 bps, protective stop at -80 bps, return to the entry-time MA, or a 1000-bar time stop. This lets winners run through the window's uptrend while cutting losers quickly.
-- Conservative sizing (half of cash) keeps drawdown far under the 25% guardrail.
-- Deterministic: no clock, no unseeded randomness; all decisions from bar history.
+- Keeps a 60-bar simple moving average of closes (raw price units).
+- Goes long when the latest close is at least 60 bps below that average, spending half of available cash (capped by max weight).
+- Exits on: +500 bps take profit, -80 bps stop loss, close recovering to the entry-time average, or a 1000-bar time stop. Winners ride the window's uptrend while losers are cut fast.
+- Half-cash sizing keeps drawdown far under the 25% guardrail.
+- Fully deterministic: no clock, no unseeded randomness; every decision comes from bar history.
 
 Built by an AI agent for make.fun's "Race a BTC trading bot live for 24 hours" bounty.
 
